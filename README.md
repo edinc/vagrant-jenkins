@@ -16,7 +16,7 @@ vagrant up
 To access the Jenkins server
 
 ```
-https://localhost:8080
+http://localhost:8080
 ```
 
 or, add the following line to the hosts file
@@ -28,7 +28,7 @@ or, add the following line to the hosts file
 and then run the server with
 
 ```
-https://jenkins.local:8080
+http://jenkins.local:8080
 ```
 
 ## First time accessing Jenkins
