@@ -19,7 +19,8 @@ sudo apt-get -y install npm
 ########################
 # Docker
 ########################
-sudo apt-get -y install docker-ce
+sudo apt-get -y install docker.io
+sudo usermod -aG docker ${USER}
 
 ########################
 # nginx
