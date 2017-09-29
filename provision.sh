@@ -28,6 +28,7 @@ sudo apt-get -y install docker.io
 sudo systemctl enable docker
 sudo usermod -aG docker ${USER}
 sudo usermod -aG docker jenkins
+sudo usermod -aG docker ubuntu
 
 ########################
 # nginx
