@@ -9,6 +9,18 @@ sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources
 sudo apt-get update > /dev/null 2>&1
 sudo apt-get -y install jenkins > /dev/null 2>&1
 
+
+########################
+# Node & npm
+########################
+sudo apt-get -y install nodejs
+sudo apt-get -y install npm
+
+########################
+# Docker
+########################
+sudo apt-get -y install docker-ce
+
 ########################
 # nginx
 ########################
