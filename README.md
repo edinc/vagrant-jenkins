@@ -1,6 +1,6 @@
 # Vagrant Jenkins build
 
-Run a Jenkins 2.25 instance on Ubuntu 16.04 LTS using vagrant.
+Run latest Jenkins instance on Ubuntu 16.04 LTS using vagrant.
 
 ## Prerequisites
 * [VirtualBox](https://www.virtualbox.org/)
