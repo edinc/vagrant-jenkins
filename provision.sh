@@ -4,7 +4,7 @@
 # Jenkins & Java
 ########################
 echo "Installing Java"
-sudo apt-get -y install openjdk-7-jre-headless
+sudo apt-get -y install openjdk-8-jre-headless
 echo "Installing Jenkins"
 wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
 sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
@@ -24,7 +24,9 @@ sudo apt-get -y install npm
 ########################
 echo "Installing Docker"
 sudo apt-get -y install docker.io
+sudo systemctl enable docker
 sudo usermod -aG docker ${USER}
+sudo usermod -aG docker jenkins
 
 ########################
 # nginx
