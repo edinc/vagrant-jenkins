@@ -16,6 +16,7 @@ sudo apt-get -y install jenkins > /dev/null 2>&1
 # Node & npm
 ########################
 echo "Installing Node & npm"
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get -y install nodejs
 sudo apt-get -y install npm
 
