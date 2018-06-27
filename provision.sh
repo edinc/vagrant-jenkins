@@ -1,6 +1,13 @@
 #!/bin/bash
 
 ########################
+# System up to date
+########################
+echo "Upgrading OS"
+sudo apt-get update
+sudo apt-get upgrade -y
+
+########################
 # Jenkins
 ########################
 echo "Installing Jenkins"
@@ -8,6 +15,16 @@ wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key 
 sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
 sudo apt-get update > /dev/null 2>&1
 sudo apt-get -y install default-jdk jenkins > /dev/null 2>&1
+
+########################
+# Oracle Java
+########################
+echo "Installing Java 8 to make Jenkins up & running"
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install -y python-software-properties debconf-utils
+echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | sudo debconf-set-selections
+sudo apt-get install -y oracle-java8-installer
 
 ########################
 # nginx
