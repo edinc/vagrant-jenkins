@@ -3,16 +3,11 @@
 ########################
 # Jenkins & Java
 ########################
-echo "Installing Java"
-sudo apt-get -y install openjdk-8-jre-headless
-echo "Installing Jenkins"
+echo "Installing Jenkins and Java"
 wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
 sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
 sudo apt-get update > /dev/null 2>&1
 sudo apt-get -y install default-jdk jenkins > /dev/null 2>&1
-sudo apt-get update > /dev/null 2>&1
-sudo apt-get -y install jenkins > /dev/null 2>&1
-
 
 ########################
 # Node & npm
