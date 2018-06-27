@@ -1,4 +1,4 @@
-# Vagrant Jenkins build
+# Vagrant Jenkins build [![Build Status](https://travis-ci.org/edinc/vagrant-jenkins.svg?branch=master)](https://travis-ci.org/edinc/vagrant-jenkins)
 
 Run latest Jenkins instance on Ubuntu 16.04 LTS using vagrant.
 
