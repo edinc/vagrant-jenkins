@@ -8,6 +8,9 @@ wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key 
 sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
 sudo apt-get update > /dev/null 2>&1
 sudo apt-get -y install default-jdk jenkins > /dev/null 2>&1
+sudo cp /mnt/host_machine/JenkinsConfig/config.xml /var/lib/jenkins/
+sudo mkdir -p /var/lib/jenkins/users/admin
+sudo cp /mnt/host_machine/JenkinsConfig/users/admin/config.xml /var/lib/jenkins/users/admin/
 
 ########################
 # Node & npm
