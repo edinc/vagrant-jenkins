@@ -11,6 +11,7 @@ sudo apt-get -y install default-jdk jenkins > /dev/null 2>&1
 sudo cp /mnt/host_machine/JenkinsConfig/config.xml /var/lib/jenkins/
 sudo mkdir -p /var/lib/jenkins/users/admin
 sudo cp /mnt/host_machine/JenkinsConfig/users/admin/config.xml /var/lib/jenkins/users/admin/
+sudo chown -R jenkins:jenkins /var/lib/jenkins/users/
 
 ########################
 # Node & npm
