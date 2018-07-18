@@ -47,7 +47,7 @@ sudo service nginx start
 echo "Configuring nginx"
 cd /etc/nginx/sites-available
 sudo rm default ../sites-enabled/default
-sudo cp /vagrant/VirtualHost/jenkins /etc/nginx/sites-available/
+sudo cp /mnt/host_machine/VirtualHost/jenkins /etc/nginx/sites-available/
 sudo ln -s /etc/nginx/sites-available/jenkins /etc/nginx/sites-enabled/
 sudo service nginx restart
 sudo service jenkins restart
