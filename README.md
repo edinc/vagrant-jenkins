@@ -32,18 +32,9 @@ http://jenkins.local:8080
 ```
 
 ## First time accessing Jenkins
-Since version 2.0 Jenkins has a security setup wizard when first running it after the installation.
 
-SSH into the machine with
+Jenkins is set up with one user with
+username: admin
+password: admin
 
-```
-vagrant ssh
-```
-
-Locate the security password
-
-```
-cat /var/lib/jenkins/secrets/initialAdminPassword
-```
-
-and copy it into the password field on the Jenkins server.
+usual caveat about changing the password once setup.
