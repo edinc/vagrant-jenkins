@@ -34,7 +34,8 @@ http://jenkins.local:8080
 ## First time accessing Jenkins
 
 Jenkins is set up with one user with
+```
 username: admin
 password: admin
-
+```
 usual caveat about changing the password once setup.
