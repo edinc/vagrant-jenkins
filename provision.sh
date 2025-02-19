@@ -56,3 +56,9 @@ sudo ln -s /etc/nginx/sites-available/jenkins /etc/nginx/sites-enabled/
 sudo service nginx restart
 sudo service jenkins restart
 echo "Success"
+
+########################
+# Bats
+########################
+echo "Installing Bats"
+sudo apt-get -y install bats

@@ -39,3 +39,13 @@ username: admin
 password: admin
 ```
 usual caveat about changing the password once setup.
+
+## Bats Tests
+
+This repository includes tests written using [Bats](https://github.com/sstephenson/bats). These tests check if Jenkins is installed, if the Jenkins service is running, and if Jenkins is accessible on port 8080.
+
+To run the tests, use the following command:
+
+```
+bats tests/
+```
