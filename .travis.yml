@@ -2,3 +2,13 @@ language: bash
 
 notifications:
     slack: tehnografija:yGLRFooashh7wutsGmMQFxou
+
+jobs:
+  include:
+    - stage: install Bats
+      script:
+        - sudo apt-get update
+        - sudo apt-get install -y bats
+    - stage: run Bats tests
+      script:
+        - bats tests/
